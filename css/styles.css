@@ -145,10 +145,7 @@ img {
     fill: var(--primary-text-color);
     margin-right: 10px;
 }
-.contacts-icon:hover,
-.contacts-icon:focus {
-    fill: var(--accent-color);
-}
+
 
 /* ------END NAVIGATION------ */
 
@@ -433,7 +430,12 @@ height: 92px;
 
 .footer-container{
     display: flex; 
+}
+
+.footer-container-address{
+    display: flex; 
     flex-direction: column;  
+    margin-right: 70px;
 }
 
 .footer-logo{
@@ -444,6 +446,47 @@ height: 92px;
 .footer-contacts-item:not(:last-child){
     margin-bottom: 9px;
 }
+
+.footer-social-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+
+.footer-container-social{
+    display: flex;
+    flex-direction: column;
+}
+.footer-social-list-link{
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-list-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer-social-list-link:hover .social-list-icon,
+.footer-social-list-link:focus .social-list-icon {
+    fill: var(--primary-white-color);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
 /* ------END FOOTER------ */
 
 /* ------START PORTFOLIO------ */
